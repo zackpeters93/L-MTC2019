@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'L-MTC2019';
+  title = 'L_MTC2019';
+
+  loadedAccess = 'admin'
+  onNavigate(access: string) {
+    this.loadedAccess = access;
+  }
 }
